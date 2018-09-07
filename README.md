@@ -19,8 +19,8 @@ const path = require('path');
 
 function aliasEmberDirs(appAlias) {
     const emberDirs = [
-        '/application', '/array', '/component', '/object',
-        '/polyfills', '/service', '/routing', '/utils', ''
+        '/application', '/array', '/component', '/controller',
+        '/object', '/polyfills', '/service', '/routing', '/utils', ''
     ];
     const emberBaseDir = 'node_modules/intellij-emberjs-import-support/@ember';
     return emberDirs.reduce(function(result, dir) {
@@ -45,8 +45,8 @@ module.exports = {
     }
 };
 ```
-* Turn On Webpack support in JetBrains IDE: 
-Preferences | Languages & Frameworks | JavaScript | Webpack  
+* Turn On Webpack support in JetBrains IDE:
+Preferences | Languages & Frameworks | JavaScript | Webpack
 and set the config file to `webpack.config.js` which was just created.
 
 That's it.
@@ -54,14 +54,14 @@ That's it.
 
 # Improvements
 
-This package is not ready yet, and any help is appreciated. 
+This package is not ready yet, and any help is appreciated.
 
 Feel free to create a Pull Requests with improvements / fixes.
 
 
 # Licenses
 
-This package is licensed under MIT. 
+This package is licensed under MIT.
 Copyright (c) 2018 Dmitriy Labuzov.
 
 It also contains /@ember-packages subfolder from Ember.js (https://github.com/emberjs/ember.js/)
