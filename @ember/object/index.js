@@ -2,6 +2,7 @@ export {
     alias,
     get,
     getProperties,
+    getWithDefault,
     set,
     setProperties,
     observer,
